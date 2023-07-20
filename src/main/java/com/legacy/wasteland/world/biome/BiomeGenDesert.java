@@ -10,15 +10,15 @@ import net.minecraft.world.gen.NoiseGeneratorPerlin;
 import java.util.Random;
 
 public class BiomeGenDesert extends BiomeGenWastelandBase {
-    private NoiseGeneratorPerlin pillarNoise;
-    private NoiseGeneratorPerlin pillarRoofNoise;
-
     public BiomeGenDesert(BiomeProperties properties) {
         super(properties);
     }
 }
 
-public class OldGenDesert {
+public class OldGenDesert {    
+    private NoiseGeneratorPerlin pillarNoise;
+    private NoiseGeneratorPerlin pillarRoofNoise;
+    
     public OldGenDesert(BiomeProperties properties) {
         this.topBlock = Blocks.SAND.getDefaultState();
         this.fillerBlock = Blocks.SANDSTONE.getDefaultState();
