@@ -15,10 +15,14 @@ public class BiomeGenDesert extends BiomeGenWastelandBase {
 
     public BiomeGenDesert(BiomeProperties properties) {
         super(properties);
+    }
+}
+
+public class OldGenDesert {
+    public OldGenDesert(BiomeProperties properties) {
         this.topBlock = Blocks.SAND.getDefaultState();
         this.fillerBlock = Blocks.SANDSTONE.getDefaultState();
     }
-
     public void genTerrainBlocks(World worldIn, Random rand, ChunkPrimer chunkPrimerIn, int x, int z, double noiseVal) {
         if (this.pillarNoise == null || this.pillarRoofNoise == null) {
             Random d4 = new Random(worldIn.getSeed());
